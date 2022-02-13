@@ -1,7 +1,12 @@
 import React from "react";
 
-import { Banner } from "presentation/Sections";
+import { Banner, AboutMe } from "presentation/Sections";
 
 export function Home() {
-  return <Banner />;
+  return (
+    <>
+      <Banner />
+      <AboutMe />
+    </>
+  );
 }

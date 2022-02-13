@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Images } from "assets/images";
 
 export const ContainerBanner = styled.section`
-  grid-column: 1 / 4;
   background-image: url(${Images.Banner.src});
   background-repeat: no-repeat;
   background-size: cover;

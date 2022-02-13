@@ -28,10 +28,11 @@ export default createGlobalStyle`
     min-height: 100vh;
     min-height: -webkit-fill-available;
     position: relative;
+    background-color: ${props => props.theme.colors.Primary};
     #__next {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
     }
   }
 `;
