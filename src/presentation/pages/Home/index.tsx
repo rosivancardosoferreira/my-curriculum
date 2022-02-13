@@ -1,11 +1,7 @@
 import React from "react";
 
-import { Container } from "./style";
+import { Banner } from "presentation/Sections";
 
 export function Home() {
-  return (
-    <Container>
-      <h1>Teste</h1>
-    </Container>
-  );
+  return <Banner />;
 }

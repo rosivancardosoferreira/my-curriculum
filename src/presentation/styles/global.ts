@@ -13,9 +13,6 @@ export default createGlobalStyle`
     list-style: none;
   }
   
-  h1, h2, strong, p, span, label, a, li {
-    font-family: 'Courier New', Courier, monospace;
-  }
   
   a {
     text-decoration: none;

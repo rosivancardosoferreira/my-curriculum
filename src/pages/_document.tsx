@@ -5,7 +5,7 @@ import Document, {
   Html,
   Head,
   Main,
-  NextScript,
+  NextScript
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
@@ -19,8 +19,7 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
         });
 
       const initialProps = await Document.getInitialProps(ctx);
@@ -31,7 +30,7 @@ export default class MyDocument extends Document {
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
-        ),
+        )
       };
     } finally {
       sheet.seal();
@@ -43,8 +42,19 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
+          <title>Rosivan Cardoso | Portfólio</title>
           <meta name="description" content="Breve descrição do website."></meta>
-          <link rel="apple-touch-icon" href="/static/images/LOGO.png" />
+          {/* <link rel="apple-touch-icon" href="/static/images/LOGO.png" /> */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+          />
           <link rel="icon" href="/static/favicon.ico" />
         </Head>
         <body>
