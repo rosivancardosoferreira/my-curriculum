@@ -1,7 +1,6 @@
 import { css } from "styled-components";
 
 export const GridSection = css`
-  border: 5px solid red;
   @media screen and (min-width: 0) {
     width: 100%;
     display: grid;

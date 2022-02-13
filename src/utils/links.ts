@@ -1,3 +1,5 @@
+import { Icons } from "assets/icons";
+
 export const MyLinks = {
   Github: {
     text: "github.com/rosivancardosoferreira",
@@ -16,3 +18,22 @@ export const MyLinks = {
     link: "https://wa.me/5592993458416"
   }
 };
+
+export const ListContacts = [
+  {
+    icon: Icons.Github,
+    link: MyLinks.Github.link
+  },
+  {
+    icon: Icons.Linkedin,
+    link: MyLinks.Linkedin.link
+  },
+  {
+    icon: Icons.Email,
+    link: MyLinks.Email.link
+  },
+  {
+    icon: Icons.WhatsApp,
+    link: MyLinks.WhatsApp.link
+  }
+];

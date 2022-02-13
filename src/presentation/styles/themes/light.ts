@@ -30,6 +30,7 @@ const light = {
       ExtraLarge: "3.7rem"
     },
     Small2: "0.75rem",
+    Small3: "0.875rem",
     Normal1: "1rem",
     Normal2: "1.15rem",
     Normal3: "1.25rem",
