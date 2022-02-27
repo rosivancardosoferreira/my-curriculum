@@ -26,7 +26,7 @@ export const GridSection = css`
 
 export const SectionMaxWidth = css`
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   @media screen and (min-width: 0) {
     padding-left: 32px;
     padding-right: 32px;

@@ -2,11 +2,11 @@ import { SectionMaxWidth } from "presentation/styles/shared";
 import styled from "styled-components";
 
 export const ContainerTitleSection = styled.div`
+  ${SectionMaxWidth}
   display: flex;
   align-items: center;
+  margin-top: 60px;
   margin-bottom: 50px;
-
-  ${SectionMaxWidth}
   .sub__title__line {
     background-color: ${props => props.theme.colors.primaryWhite};
     width: 60px;

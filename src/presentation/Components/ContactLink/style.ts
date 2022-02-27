@@ -18,7 +18,7 @@ export const ContainerContactLink = styled.div`
     max-width: 200px;
     position: absolute;
     left: -55px;
-    top: -60px;
+    top: -80px;
     display: flex;
     flex-direction: column;
     align-items: center;
