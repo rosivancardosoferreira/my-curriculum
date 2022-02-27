@@ -3,13 +3,17 @@ import React from "react";
 // STYLE
 import { ContainerAboutMe, AboutMeInfos } from "./style";
 
-// COMPONENTS
+// Assets
 import { Images } from "assets/images";
+
+// COMPONENTS
 import {
   TitleSection,
   ButtonLinkPrimary,
   ContactLink
 } from "presentation/Components";
+
+// UTILS
 import { ListContacts } from "utils/links";
 
 export function AboutMe() {

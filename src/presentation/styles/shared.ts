@@ -23,3 +23,18 @@ export const GridSection = css`
     padding-right: 72px;
   }
 `;
+
+export const SectionMaxWidth = css`
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 0) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: ${props => props.theme.size.maxWidthDesktop};
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+`;
