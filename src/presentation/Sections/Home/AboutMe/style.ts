@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import { Images } from "assets/images";
-import { GridSection } from "presentation/styles/shared";
+import { GridSection, Parallax } from "presentation/styles/shared";
 
 export const ContainerAboutMe = styled.section`
   .about__container {
     background-image: url(${Images.About.src});
-    background-repeat: no-repeat;
-    background-size: cover;
+    ${Parallax};
     padding: 50px 0;
   }
   @media screen and (max-width: 767px) {

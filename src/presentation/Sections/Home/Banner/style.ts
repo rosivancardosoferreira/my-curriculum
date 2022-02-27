@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { Images } from "assets/images";
-
+import { Parallax } from "presentation/styles/shared";
 export const ContainerBanner = styled.section`
   background-image: url(${Images.Banner.src});
-  background-repeat: no-repeat;
-  background-size: cover;
+  ${Parallax};
   height: 100vh;
   display: flex;
   align-items: center;

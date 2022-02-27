@@ -1,5 +1,12 @@
 import { css } from "styled-components";
 
+export const Parallax = css`
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+`;
+
 export const GridSection = css`
   @media screen and (min-width: 0) {
     width: 100%;

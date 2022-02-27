@@ -23,6 +23,7 @@ export default createGlobalStyle`
     scroll-behavior: smooth;
   }
 
+
   body {
     background: #FFFFFF;
     min-height: 100vh;

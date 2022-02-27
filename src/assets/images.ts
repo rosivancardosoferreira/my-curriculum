@@ -10,5 +10,9 @@ export const Images = {
   Profile: {
     src: "/static/images/photo_profile.webp",
     alt: "Profile Rosivan"
+  },
+  Experience: {
+    src: "/static/images/experience.webp",
+    alt: "Background Image"
   }
 };

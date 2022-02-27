@@ -25,6 +25,7 @@ export const ContainerContactLink = styled.div`
     max-height: 0;
     transition: all 0.6s;
     overflow: hidden;
+    border: 1px solid transparent;
     .link__hover__list {
       padding: 6px 15px;
       background-color: ${props => props.theme.colors.WhiteSecondary};

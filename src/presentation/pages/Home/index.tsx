@@ -1,13 +1,21 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import { Banner, AboutMe, Skills } from "presentation/Sections";
+import {
+  Banner,
+  AboutMe,
+  Skills,
+  Experience,
+  Portfolio
+} from "presentation/Sections";
 
 export function Home() {
   return (
-    <>
+    <Fragment>
       <Banner />
       <AboutMe />
       <Skills />
-    </>
+      <Experience />
+      <Portfolio />
+    </Fragment>
   );
 }

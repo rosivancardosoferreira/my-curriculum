@@ -2,6 +2,7 @@ import React from "react";
 
 // ASSETS
 import { ListSkills, Tools } from "utils/skills";
+
 // COMPONENTS
 import { SubTitleSection, TitleSection } from "presentation/Components";
 
