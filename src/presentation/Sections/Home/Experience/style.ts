@@ -7,6 +7,8 @@ export const ContainerExperience = styled.section`
   ${Parallax};
   padding: 90px 0;
   background-color: white;
+  display: none;
+
   .fixed {
     position: fixed;
     border: 1px solid red;

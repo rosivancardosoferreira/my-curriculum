@@ -56,10 +56,10 @@ export const ListSkills = [
     }
   },
   {
-    name: "Styled-components",
+    name: "Styled components",
     icon: {
       src: "static/images/icons/styled.webp",
-      alt: "Icone de Styled-components"
+      alt: "Icone de Styled components"
     }
   },
   {

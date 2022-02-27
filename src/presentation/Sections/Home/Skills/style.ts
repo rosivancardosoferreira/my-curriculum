@@ -7,7 +7,6 @@ export const ContainerMapSkills = styled.div`
   ${SectionMaxWidth}
   display: flex;
   flex-wrap: wrap;
-  display: none;
   .skill__item {
     border: 1px solid ${props => props.theme.colors.GrayTertiary};
     display: flex;
@@ -15,13 +14,15 @@ export const ContainerMapSkills = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    height: 243px;
+    height: 225px;
     margin: 0 -1px -1px 0;
     .skill__name {
       margin-top: 30px;
       font-family: ${props => props.theme.fonts.Archivo};
       font-size: ${props => props.theme.fontSize.Normal3};
       color: ${props => props.theme.colors.WhiteSecondary};
+      text-align: center;
+      padding: 0 10px;
     }
     .skill__icon {
       width: 90px;
@@ -29,10 +30,26 @@ export const ContainerMapSkills = styled.div`
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 830px) {
+    .skill__item {
+      width: 50%;
+      height: 200px;
+    }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 831px) and (max-width: 1109px) {
+    .skill__item {
+      width: 25%;
+    }
+  }
+
+  @media (min-width: 1110px) and (max-width: 1284px) {
+    .skill__item {
+      width: 20%;
+    }
+  }
+
+  @media screen and (min-width: 1285px) {
     .skill__item {
       width: 16.666666667%;
     }
