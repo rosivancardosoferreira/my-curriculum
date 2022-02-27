@@ -14,5 +14,9 @@ export const Images = {
   Experience: {
     src: "/static/images/experience.webp",
     alt: "Background Image"
+  },
+  Formulario: {
+    src: "static/images/formulario.webp",
+    alt: "Formulário SNCT"
   }
 };
