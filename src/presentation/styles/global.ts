@@ -35,5 +35,6 @@ export default createGlobalStyle`
         flex-direction: column;
         row-gap: 70px;
     }
+    border: 1px solid white;
   }
 `;

@@ -1,27 +1,20 @@
 import styled from "styled-components";
 import { Images } from "assets/images";
-import { GridSection, Parallax } from "presentation/styles/shared";
+import { Parallax, SectionMaxWidth } from "presentation/styles/shared";
 
 export const ContainerAboutMe = styled.section`
+  /* display: none; */
+
   .about__container {
     background-image: url(${Images.About.src});
     ${Parallax};
     padding: 50px 0;
   }
-  @media screen and (max-width: 767px) {
-  }
-
-  @media (min-width: 768px) and (max-width: 1439px) {
-  }
-
-  @media screen and (min-width: 1440px) {
-  }
 `;
 
 export const AboutMeInfos = styled.article`
-  ${GridSection}
+  ${SectionMaxWidth}
   .about__infos {
-    grid-column: 1 / 10;
     display: flex;
     gap: 32px;
     .about__profile__photo {
@@ -57,11 +50,45 @@ export const AboutMeInfos = styled.article`
           color: ${props => props.theme.colors.BlueLight};
         }
       }
+      .list__contacts {
+        display: flex;
+        align-self: flex-end;
+        gap: 20px;
+      }
     }
-    .list__contacts {
-      display: flex;
-      align-self: flex-end;
-      gap: 20px;
+  }
+
+  @media screen and (max-width: 760px) {
+    .about__infos {
+      flex-direction: column;
+      .about__profile__photo {
+        width: fit-content;
+      }
+      .about__container__text {
+        row-gap: 30px;
+
+        .list__contacts {
+          margin-right: 6vw;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 761px) and (max-width: 1109px) {
+    .about__infos {
+      width: 95%;
+    }
+  }
+
+  @media (min-width: 1110px) and (max-width: 1299px) {
+    .about__infos {
+      width: 80%;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .about__infos {
+      width: 75%;
     }
   }
 `;

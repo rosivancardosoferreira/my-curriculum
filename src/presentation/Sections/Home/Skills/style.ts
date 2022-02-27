@@ -7,6 +7,7 @@ export const ContainerMapSkills = styled.div`
   ${SectionMaxWidth}
   display: flex;
   flex-wrap: wrap;
+  display: none;
   .skill__item {
     border: 1px solid ${props => props.theme.colors.GrayTertiary};
     display: flex;

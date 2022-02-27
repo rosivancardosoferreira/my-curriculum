@@ -31,7 +31,6 @@ export function AboutMe() {
                 className="about__infos__photo"
               />
             </article>
-
             <article className="about__container__text">
               <p className="about__container__text__p">
                 Opa, me chamo
