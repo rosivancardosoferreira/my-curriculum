@@ -33,16 +33,15 @@ export function AboutMe() {
             </article>
             <article className="about__container__text">
               <p className="about__container__text__p">
-                Opa, me chamo
+                Opa,
                 <strong className="about__container__text__strong">
                   {" "}
-                  Rosivan Cardoso
+                  Rosivan Cardoso{" "}
                 </strong>
-                , sou desenvolvedor front-end há uns 2 anos. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Vitae morbi ut ac quam
-                aliquet ornare. Nec venenatis at quisque lorem nisi, quam
-                mollis. Diam nunc nunc, urna vel ullamcorper egestas. Nec
-                sollicitudin leo in ultricies vel diam varius luctus.
+                aqui, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Earum repellendus enim iusto, nesciunt explicabo a similique
+                dolor dolorum inventore iste quaerat ipsam eos autem cupiditate
+                molestias doloremque sint magnam ullam.
               </p>
               <ButtonLinkPrimary
                 link="#"
