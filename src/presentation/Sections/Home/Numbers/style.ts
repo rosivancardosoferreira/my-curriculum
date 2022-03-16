@@ -6,6 +6,7 @@ export const ContainerNumber = styled.section`
   background-image: url(${Images.Infos.src});
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   padding: 90px 0;
   .number__article {
     ${SectionMaxWidth}
@@ -26,6 +27,14 @@ export const ContainerNumber = styled.section`
       .number__description {
         font-size: ${props => props.theme.fontSize.Normal4};
       }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 70px 0;
+    background-position: top;
+    .number__article {
+      flex-direction: column;
+      gap: 4.5rem;
     }
   }
 `;
