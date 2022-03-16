@@ -18,5 +18,9 @@ export const Images = {
   Formulario: {
     src: "static/images/formulario.webp",
     alt: "Formulário SNCT"
+  },
+  Infos: {
+    src: "static/images/infos.webp",
+    alt: "Background infos"
   }
 };

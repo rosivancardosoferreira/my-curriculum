@@ -5,7 +5,8 @@ import {
   AboutMe,
   Skills,
   Experience,
-  Portfolio
+  Portfolio,
+  Numbers
 } from "presentation/Sections";
 
 export function Home() {
@@ -15,6 +16,7 @@ export function Home() {
       <AboutMe />
       <Skills />
       <Experience />
+      <Numbers />
       <Portfolio />
     </Fragment>
   );

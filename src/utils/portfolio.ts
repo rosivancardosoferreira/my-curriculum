@@ -29,26 +29,60 @@ const php = {
 export const WebPortfolio = [
   {
     name: "Formulário SNCT ICET-UFAM",
-    description:
-      "Formulário para lorem palara sisso aqui os caravaleiro alfavi de peixe morreru para o minus alucasbaks onplacea s key so de  capitação e alocação de dia e horário para atividades do evento.",
+    description: "Formulário para capitação e alocação atividades do evento.",
     created: "09/2020",
     image: Images.Formulario,
-    techs: [html, css, javascript, php]
+    techs: [html, css, javascript, php],
+    link: "https://sncticet.ufam.edu.br/formulario/"
   },
   {
-    name: "Formulário SNCT ICET-UFAM",
-    description:
-      "Formulário para capitação e alocação de dia e horário para atividades do evento.",
+    name: "Easy2Recruit",
+    description: "Website para empresa de recrutamento e seleção.",
     created: "09/2020",
     image: Images.Formulario,
-    techs: [html, css, javascript, php]
+    techs: [html, css, javascript, php],
+    link: "https://easy2recruit.com/"
   },
   {
-    name: "Formulário SNCT ICET-UFAM",
-    description:
-      "Formulário para capitação e alocação de dia e horário para atividades do evento.",
+    name: "Ritz & Silva",
+    description: "Website para escritório de advocacia.",
     created: "09/2020",
     image: Images.Formulario,
-    techs: [html, css, javascript, php]
+    techs: [html, css, javascript, php],
+    link: "https://ritzesilva.com.br/"
+  },
+  {
+    name: "RenoveICET - Chapa 10",
+    description: "Website para divulgação da cantidatura da Chapa 10.",
+    created: "09/2020",
+    image: Images.Formulario,
+    techs: [html, css, javascript, php],
+    link: "https://ufam-icet-chapa10.vercel.app/"
+  },
+  {
+    name: "MeuNovoCV",
+    description: "Website para criação de currículos personalizados",
+    created: "09/2020",
+    image: Images.Formulario,
+    techs: [html, css, javascript, php],
+    link: "https://app.meunovocv.com/"
+  },
+  {
+    name: "Seminário de Mobilidade Urbana",
+    description:
+      "Website para divulgação do evento de Mobilidade Urbana de Itacoatiara.",
+    created: "09/2020",
+    image: Images.Formulario,
+    techs: [html, css, javascript, php],
+    link: "https://mobilidadeurbanaita.com/"
+  },
+  {
+    name: "Seminário de Mobilidade Urbana",
+    description:
+      "Website para divulgação do evento de Mobilidade Urbana de Itacoatiara.",
+    created: "09/2020",
+    image: Images.Formulario,
+    techs: [html, css, javascript, php],
+    link: "https://app.meunovocv.com/"
   }
 ];
