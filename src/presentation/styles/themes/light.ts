@@ -7,7 +7,8 @@ const light = {
     WhiteTertiary: "#D1D1D1",
     primaryBlack: "#000000",
     BlueLight: "#14FFF1",
-    GrayTertiary: "#433A4E"
+    GrayTertiary: "#433A4E",
+    GreenNeon: "#0FFF50"
   },
   size: {
     maxWidthDesktop: "calc(1216px + 72px * 2 )",

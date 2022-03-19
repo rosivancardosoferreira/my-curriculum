@@ -17,7 +17,7 @@ import { Icons } from "assets/icons";
 export function Portfolio() {
   return (
     <ContainerPortfolio>
-      <TitleSection title="COM O QUE TRABALHO" />
+      <TitleSection title="DESENVOLVIMENTOS" />
       <SubTitleSection title="Web" />
       <MapPortfolio>
         {WebPortfolio.map((elem, index) => (
@@ -29,17 +29,37 @@ export function Portfolio() {
                 className="portfolio__item__image"
               />
               <div className="portfolio__item__hidden">
+                {elem.link && (
+                  <ButtonLinkPrimary
+                    link={elem.link}
+                    typeButton="primary"
+                    title="Visitar"
+                    target="_blank"
+                  />
+                )}
                 <ButtonLinkPrimary
                   link="#"
                   typeButton="primary"
-                  title="Visitar"
+                  title="Sobre"
                 />
+                {elem.github && (
+                  <ButtonLinkPrimary
+                    link="#"
+                    typeButton="primary"
+                    title="GitHub"
+                  />
+                )}
               </div>
             </div>
             <div className="portfolio__infos">
               <div className="portfolio__techs">
                 {elem.techs.map((item, i) => (
-                  <Tech key={i} BgColor={item.bgColor} ftColor={item.color}>
+                  <Tech
+                    key={i}
+                    BgColor={item.bgColor}
+                    ftColor={item.color}
+                    className={item.class}
+                  >
                     {item.name}
                   </Tech>
                 ))}
@@ -49,10 +69,18 @@ export function Portfolio() {
             </div>
             <div className="portfolio__item__created">
               <div className="item__created__datas">
-                {Icons.Calendar}
-                <p className="portfolio__item__created__date">
-                  Desenvolvido em: {elem.created}
-                </p>
+                <div className="item__created__content">
+                  {Icons.Calendar}
+                  <p className="portfolio__item__created__date">
+                    Desenvolvido em: {elem.created}
+                  </p>
+                </div>
+                {elem.github && (
+                  <div className="portfolio__github">
+                    <div className="item__on" />
+                    {Icons.Github}
+                  </div>
+                )}
               </div>
             </div>
           </div>

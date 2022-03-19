@@ -23,7 +23,8 @@ export const ContainerContactLink = styled.div`
     flex-direction: column;
     align-items: center;
     max-height: 0;
-    transition: all 0.6s;
+    transform: scale(0);
+    transition: all 0.5s;
     overflow: hidden;
     border: 1px solid transparent;
     .link__hover__list {
@@ -68,6 +69,7 @@ export const ContainerContactLink = styled.div`
       max-height: 170px;
       top: -100px;
       padding-bottom: 10px;
+      transform: scale(1);
     }
   }
 `;

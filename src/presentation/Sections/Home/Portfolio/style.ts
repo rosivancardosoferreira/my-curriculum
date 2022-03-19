@@ -29,11 +29,12 @@ export const MapPortfolio = styled.section`
         height: 100%;
         display: flex;
         align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
         justify-content: center;
         background: rgba(0, 0, 0, 0.8);
       }
       :hover {
-        cursor: pointer;
         .portfolio__item__hidden {
           transform: scale(1);
         }
@@ -49,6 +50,15 @@ export const MapPortfolio = styled.section`
         display: flex;
         flex-wrap: wrap;
         column-gap: 20px;
+        .styled {
+          background: linear-gradient(
+            180deg,
+            #efac68 0%,
+            #ed9a45 0.01%,
+            #e79479 44.79%,
+            #de788d 77.6%
+          ) !important;
+        }
       }
       .portfolio__item__title {
         font-size: ${props => props.theme.fontSize.Normal3};
@@ -70,11 +80,31 @@ export const MapPortfolio = styled.section`
       justify-content: flex-end;
       .item__created__datas {
         display: flex;
-        column-gap: 10px;
+        justify-content: space-between;
+        .item__created__content {
+          display: flex;
+          column-gap: 10px;
+        }
         .portfolio__item__created__date {
           font-size: ${props => props.theme.fontSize.Small2};
           font-family: ${props => props.theme.fonts.Montserrat};
           color: ${props => props.theme.colors.WhiteTertiary};
+        }
+        .portfolio__github {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          .icon__github {
+            width: 16px;
+            height: 17px;
+          }
+          .item__on {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 6px;
+            background-color: ${props => props.theme.colors.GreenNeon};
+          }
         }
       }
     }
