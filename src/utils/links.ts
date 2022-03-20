@@ -11,7 +11,7 @@ export const MyLinks = {
   },
   Email: {
     text: "rosivancardoso767@gmail.com",
-    link: "mailto: rosivancardoso767@gmail.com"
+    link: "rosivancardoso767@gmail.com"
   },
   WhatsApp: {
     text: "(92) 99345-8416",

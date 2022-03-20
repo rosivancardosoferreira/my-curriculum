@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // STYLE
 import { ContainerAboutMe, AboutMeInfos } from "./style";
@@ -10,15 +10,22 @@ import { Images } from "assets/images";
 import {
   TitleSection,
   ButtonLinkPrimary,
-  ContactLink
+  ContactLink,
+  SimpleAlert
 } from "presentation/Components";
 
 // UTILS
 import { ListContacts } from "utils/links";
 
 export function AboutMe() {
+  const [open, setOpen] = useState(false);
+  function handleSimpleModal() {
+    setOpen(true);
+    setTimeout(() => setOpen(false), 3000);
+  }
   return (
     <ContainerAboutMe>
+      <SimpleAlert open={open} message="Item copiado" />
       <TitleSection title="SOBRE MIM" />
       <article className="about__container">
         <AboutMeInfos>
@@ -52,9 +59,11 @@ export function AboutMe() {
                 {ListContacts.map((elem, index) => {
                   return (
                     <ContactLink
+                      copy={handleSimpleModal}
                       key={index}
                       link={elem.link}
                       icon={elem.icon}
+                      email={index === 2}
                     />
                   );
                 })}

@@ -38,7 +38,6 @@ export const ContainerContactLink = styled.div`
         display: flex;
         align-items: center;
         column-gap: 10px;
-        cursor: pointer;
         padding: 5px 0;
         svg {
           transform: scale(1.7);
@@ -48,6 +47,14 @@ export const ContainerContactLink = styled.div`
           font-size: ${props => props.theme.fontSize.Normal2};
           font-family: ${props => props.theme.fonts.Montserrat};
           font-weight: 600;
+          border: none;
+          background-color: transparent;
+        }
+        .link__item--cursor {
+          cursor: pointer;
+        }
+        .link__item--copy {
+          cursor: copy;
         }
       }
     }

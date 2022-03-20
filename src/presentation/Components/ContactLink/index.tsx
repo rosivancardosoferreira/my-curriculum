@@ -9,8 +9,14 @@ import { ContainerContactLink } from "./style";
 interface PropsContactLink {
   link: string;
   icon: ReactElement;
+  copy: () => void;
+  email: boolean;
 }
-export function ContactLink({ link, icon }: PropsContactLink) {
+export function ContactLink({ link, icon, copy, email }: PropsContactLink) {
+  const CopyText = async (text: string) => {
+    await navigator.clipboard.writeText(text);
+    copy();
+  };
   return (
     <ContainerContactLink>
       <div className="link__hover">
@@ -18,8 +24,8 @@ export function ContactLink({ link, icon }: PropsContactLink) {
           <li className="link__hover__list__item">
             {Icons.OpenLink}
             <a
-              href={link}
-              className="link__item"
+              href={!email ? link : `mailto: ${link}`}
+              className="link__item link__item--cursor"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -28,9 +34,12 @@ export function ContactLink({ link, icon }: PropsContactLink) {
           </li>
           <li className="link__hover__list__item">
             {Icons.CopyText}
-            <a href="#" className="link__item">
+            <button
+              className="link__item link__item--copy"
+              onClick={() => CopyText(link)}
+            >
               Copiar Link
-            </a>
+            </button>
           </li>
         </ul>
         {Icons.ArrowDown}
