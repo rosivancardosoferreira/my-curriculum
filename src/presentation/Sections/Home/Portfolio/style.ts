@@ -10,7 +10,6 @@ export const MapPortfolio = styled.section`
   flex-wrap: wrap;
   row-gap: 40px;
   .portfolio__item {
-    width: calc(50% - 20px);
     flex-direction: column;
     display: flex;
     border: 1px solid ${props => props.theme.colors.GrayTertiary};
@@ -129,6 +128,11 @@ export const MapPortfolio = styled.section`
   @media screen and (max-width: 830px) {
     .portfolio__item {
       width: 100%;
+    }
+  }
+  @media screen and (min-width: 831px) {
+    .portfolio__item {
+      width: calc(50% - 20px);
     }
   }
 `;

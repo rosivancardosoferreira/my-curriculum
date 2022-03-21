@@ -4,7 +4,6 @@ import {
   Banner,
   AboutMe,
   Skills,
-  Experience,
   Portfolio,
   Numbers,
   Footer
@@ -16,7 +15,6 @@ export function Home() {
       <Banner />
       <AboutMe />
       <Skills />
-      <Experience />
       <Numbers />
       <Portfolio />
       <Footer />

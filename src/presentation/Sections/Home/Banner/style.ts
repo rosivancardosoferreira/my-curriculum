@@ -16,6 +16,7 @@ export const ContainerBanner = styled.section`
       color: ${props => props.theme.colors.primaryWhite};
       text-align: center;
       font-family: ${props => props.theme.fonts.Archivo};
+      transition: all 0.2s;
     }
     .banner__infos__dev {
       margin-top: 2rem;

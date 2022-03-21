@@ -37,6 +37,7 @@ const light = {
     Normal2: "1.15rem",
     Normal3: "1.25rem",
     Normal4: "1.563rem", // 25PX
+    Large00: "5rem",
     Large: "7.5rem"
   }
 };

@@ -10,11 +10,6 @@ export const ContainerFooter = styled.footer`
     padding: 40px 0 20px;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* border-top: 1px solid ${props => props.theme.colors.GrayTertiary}; */
-    .footer__thanks,
-    .footer__contacts {
-      width: calc(50% - 16px);
-    }
     .footer__thanks {
       font-size: ${props => props.theme.fontSize.Normal3};
       font-family: ${props => props.theme.fonts.Montserrat};
@@ -59,6 +54,23 @@ export const ContainerFooter = styled.footer`
       width: 100%;
       margin-top: 32px;
       text-align: center;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .footer__save {
+      .footer__thanks,
+      .footer__contacts {
+        width: 100%;
+      }
+      .footer__thanks {
+        margin-top: 40px;
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .footer__thanks,
+    .footer__contacts {
+      width: calc(50% - 16px);
     }
   }
 `;

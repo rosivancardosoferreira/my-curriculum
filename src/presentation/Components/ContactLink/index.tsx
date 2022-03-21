@@ -21,8 +21,14 @@ export function ContactLink({
   email
 }: PropsContactLink) {
   const CopyText = async (text: string) => {
-    await navigator.clipboard.writeText(text);
-    copy();
+    await navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        copy();
+      })
+      .catch(() => {
+        console.log("erro ao copiar");
+      });
   };
   return (
     <ContainerContactLink>
