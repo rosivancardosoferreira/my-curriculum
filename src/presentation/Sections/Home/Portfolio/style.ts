@@ -66,6 +66,7 @@ export const MapPortfolio = styled.section`
         display: flex;
         flex-wrap: wrap;
         column-gap: 20px;
+        row-gap: 12px;
         .styled {
           background: linear-gradient(
             180deg,
@@ -123,6 +124,11 @@ export const MapPortfolio = styled.section`
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 830px) {
+    .portfolio__item {
+      width: 100%;
     }
   }
 `;
