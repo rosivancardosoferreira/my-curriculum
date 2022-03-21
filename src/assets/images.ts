@@ -63,5 +63,45 @@ export const Images = {
   WarehouseSystem: {
     src: "static/images/ware.webp",
     alt: "Warehouse System"
+  },
+  MyHair: {
+    splash: {
+      src: "static/images/splashmyhair.webp",
+      alt: "My Hair Splash"
+    },
+    home: {
+      src: "static/images/homemyhair.webp",
+      alt: "My Hair Home"
+    }
+  },
+  ProtEpiAdmin: {
+    splash: {
+      src: "static/images/splash_protepi_admin.webp",
+      alt: "Protepi Administrador Splash"
+    },
+    home: {
+      src: "static/images/home_protepi_admin.webp",
+      alt: "Protepi Administrador Home"
+    }
+  },
+  ProtEpiClient: {
+    splash: {
+      src: "static/images/splash_protepi_client.webp",
+      alt: "Protepi Cliente Splash"
+    },
+    home: {
+      src: "static/images/home_protepi_client.webp",
+      alt: "Protepi Cliente Home"
+    }
+  },
+  Rent: {
+    splash: {
+      src: "static/images/home_rent.webp",
+      alt: "Rent Splash"
+    },
+    home: {
+      src: "static/images/splash_rent.webp",
+      alt: "Rent Home"
+    }
   }
 };

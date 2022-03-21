@@ -8,9 +8,9 @@ export const MapPortfolio = styled.section`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 32px;
+  row-gap: 40px;
   .portfolio__item {
-    width: calc(50% - 16px);
+    width: calc(50% - 20px);
     flex-direction: column;
     display: flex;
     border: 1px solid ${props => props.theme.colors.GrayTertiary};
@@ -33,11 +33,27 @@ export const MapPortfolio = styled.section`
         row-gap: 20px;
         justify-content: center;
         background: rgba(0, 0, 0, 0.8);
+        .portfolio__item__internal {
+          color: ${props => props.theme.colors.WhiteSecondary};
+          font-family: ${props => props.theme.fonts.Archivo};
+          font-size: ${props => props.theme.fontSize.Normal2};
+        }
       }
       :hover {
         .portfolio__item__hidden {
           transform: scale(1);
         }
+      }
+    }
+    .portfolio__item__area__image--mobile {
+      border-bottom: 1px solid ${props => props.theme.colors.GrayTertiary};
+      padding: 28px 0;
+      display: flex;
+      justify-content: center;
+      column-gap: 28px;
+      .portfolio__item__image--mobile {
+        height: 318px;
+        width: 156px;
       }
     }
     .portfolio__infos {

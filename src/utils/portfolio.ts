@@ -60,38 +60,52 @@ const typescript = {
 // IMAGENS
 
 export const WebPortfolio = [
-  {
-    name: "Condu Consult",
-    description: "Website para não sei ainda.",
-    created: "03/2022",
-    image: Images.CondoConsult,
-    techs: [react, typescript, git, styled],
-    link: "https://condo-consult-front.vercel.app/"
-  },
+  // {
+  //   name: "Condu Consult",
+  //   description: "Website para empresa de gerenciamento de condomínios.",
+  //   created: "03/2022",
+  //   image: Images.CondoConsult,
+  //   techs: [react, typescript, git, styled],
+  //   link: "https://condo-consult-front.vercel.app/"
+  // },
   {
     name: "Seminário de Mobilidade Urbana",
     description:
       "Website para divulgação do evento de Mobilidade Urbana de Itacoatiara.",
     created: "02/2022",
     image: Images.MobilidadeUrbana,
-    techs: [react, typescript, git, styled],
+    techs: [react, typescript, styled, git],
     link: "https://mobilidadeurbanaita.com/"
   },
   {
     name: "Nova Energia",
-    description: "Website para empresa de energia",
+    description: "Website para empresa de energia.",
     created: "12/2021",
     image: Images.Novaenergia,
-    techs: [react, git, css],
+    techs: [react, css, git],
     link: "https://novaenergia.com.br"
   },
   {
     name: "MeuNovoCV",
-    description: "Website para criação de currículos personalizados",
+    description: "Website para criação de currículos personalizados.",
     created: "09/2021",
     image: Images.MeuNovoCV,
-    techs: [react, typescript, git, styled],
+    techs: [react, typescript, styled, git],
     link: "https://app.meunovocv.com/"
+  },
+  {
+    name: "Warehouse",
+    description: "Sistema para gerenciamento de armazem.",
+    created: "10/2020",
+    image: Images.WarehouseSystem,
+    techs: [react, typescript, styled, git]
+  },
+  {
+    name: "Gerenciamento de OS",
+    description: "Sistema para criação e controle de Ordem de Serviços.",
+    created: "10/2020",
+    image: Images.OS,
+    techs: [react, typescript, styled]
   },
   {
     name: "Ritz & Silva",
@@ -125,5 +139,42 @@ export const WebPortfolio = [
     techs: [react, typescript, git, styled],
     link: "https://ufam-icet-chapa10.vercel.app/",
     github: "#"
+  }
+];
+
+export const MobilePortfolio = [
+  {
+    name: "Rent",
+    description: "Ajustes em MVP de aplicativo para aluguel de veículos.",
+    created: "05/2021",
+    splash_image: Images.Rent.splash,
+    home_image: Images.Rent.home,
+    techs: [react, javascript, git, styled]
+  },
+  {
+    name: "Protepi - Administrador",
+    description:
+      "Parte do administrador do aplicativo para venda de equipamentos de proteção individual.",
+    created: "03/2021",
+    splash_image: Images.ProtEpiAdmin.splash,
+    home_image: Images.ProtEpiAdmin.home,
+    techs: [react, typescript, git, styled]
+  },
+  {
+    name: "Protepi - Cliente",
+    description:
+      "Aplicativo para venda de equipamentos de proteção individual.",
+    created: "01/2021",
+    splash_image: Images.ProtEpiClient.splash,
+    home_image: Images.ProtEpiClient.home,
+    techs: [react, typescript, git, styled]
+  },
+  {
+    name: "MyHair",
+    description: "Aplicativo para venda de cabelos e produtos de cabelo.",
+    created: "10/2020",
+    splash_image: Images.MyHair.splash,
+    home_image: Images.MyHair.home,
+    techs: [react, javascript, git, styled]
   }
 ];
