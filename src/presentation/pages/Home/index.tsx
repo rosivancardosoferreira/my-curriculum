@@ -6,7 +6,8 @@ import {
   Skills,
   Experience,
   Portfolio,
-  Numbers
+  Numbers,
+  Footer
 } from "presentation/Sections";
 
 export function Home() {
@@ -18,6 +19,7 @@ export function Home() {
       <Experience />
       <Numbers />
       <Portfolio />
+      <Footer />
     </Fragment>
   );
 }

@@ -61,9 +61,10 @@ export function AboutMe() {
                     <ContactLink
                       copy={handleSimpleModal}
                       key={index}
-                      link={elem.link}
+                      link={elem.contact.link}
                       icon={elem.icon}
-                      email={index === 2}
+                      textLink={elem.contact.text}
+                      email={elem.email || false}
                     />
                   );
                 })}

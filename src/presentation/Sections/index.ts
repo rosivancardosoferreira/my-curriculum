@@ -4,3 +4,4 @@ export { Skills } from "./Home/Skills";
 export { Experience } from "./Home/Experience";
 export { Numbers } from "./Home/Numbers";
 export { Portfolio } from "./Home/Portfolio";
+export { Footer } from "./Shared/Footer";

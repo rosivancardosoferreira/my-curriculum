@@ -5,6 +5,8 @@ import { ContainerBanner } from "./style";
 
 // ASSETS
 import { Icons } from "assets/icons";
+
+// UTILS
 import { ListContacts } from "utils/links";
 
 // COMPONENTS
@@ -29,9 +31,10 @@ export function Banner() {
             <ContactLink
               copy={handleSimpleModal}
               key={index}
-              link={elem.link}
+              link={elem.contact.link}
               icon={elem.icon}
-              email={index === 2}
+              textLink={elem.contact.text}
+              email={elem.email || false}
             />
           );
         })}

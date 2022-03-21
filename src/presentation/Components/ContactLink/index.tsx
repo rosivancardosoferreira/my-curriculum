@@ -10,9 +10,16 @@ interface PropsContactLink {
   link: string;
   icon: ReactElement;
   copy: () => void;
+  textLink: string;
   email: boolean;
 }
-export function ContactLink({ link, icon, copy, email }: PropsContactLink) {
+export function ContactLink({
+  link,
+  icon,
+  copy,
+  textLink,
+  email
+}: PropsContactLink) {
   const CopyText = async (text: string) => {
     await navigator.clipboard.writeText(text);
     copy();
@@ -24,7 +31,7 @@ export function ContactLink({ link, icon, copy, email }: PropsContactLink) {
           <li className="link__hover__list__item">
             {Icons.OpenLink}
             <a
-              href={!email ? link : `mailto: ${link}`}
+              href={link}
               className="link__item link__item--cursor"
               target={"_blank"}
               rel="noreferrer"
@@ -36,7 +43,7 @@ export function ContactLink({ link, icon, copy, email }: PropsContactLink) {
             {Icons.CopyText}
             <button
               className="link__item link__item--copy"
-              onClick={() => CopyText(link)}
+              onClick={() => CopyText(email ? textLink : link)}
             >
               Copiar Link
             </button>
