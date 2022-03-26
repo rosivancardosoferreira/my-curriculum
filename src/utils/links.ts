@@ -31,10 +31,11 @@ export const ListContacts = [
   {
     icon: Icons.Email,
     contact: MyLinks.Email,
-    email: true
+    useText: true
   },
   {
     icon: Icons.WhatsApp,
-    contact: MyLinks.WhatsApp
+    contact: MyLinks.WhatsApp,
+    useText: true
   }
 ];

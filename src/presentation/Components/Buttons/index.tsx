@@ -34,6 +34,7 @@ interface PropsLinkButtonPrimary {
   download?: boolean;
   target?: "_blank";
 }
+
 export function ButtonLinkPrimary({
   title,
   link,

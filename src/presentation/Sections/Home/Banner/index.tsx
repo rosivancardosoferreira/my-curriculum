@@ -34,7 +34,7 @@ export function Banner() {
               link={elem.contact.link}
               icon={elem.icon}
               textLink={elem.contact.text}
-              email={elem.email || false}
+              useTextLink={elem.useText || false}
             />
           );
         })}

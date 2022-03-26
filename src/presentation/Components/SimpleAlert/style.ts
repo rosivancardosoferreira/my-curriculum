@@ -13,15 +13,14 @@ export const ContainerSimpleAlert = styled.div<PropsContainerSimpleAlert>`
   z-index: 2;
   transition: all 0.3s;
   .simplealert__article {
-    background-color: ${props => props.theme.colors.BlueLigh02};
+    background-color: ${props => props.theme.colors.primaryWhite};
     padding: 10px 30px;
-    border-radius: 10px;
     width: fit-content;
     .simplealert__text {
       font-size: ${props => props.theme.fontSize.Normal1};
       font-family: ${props => props.theme.fonts.Archivo};
       font-weight: 500;
-      color: ${props => props.theme.colors.Primary};
+      color: ${props => props.theme.colors.primaryBlack};
     }
   }
 `;

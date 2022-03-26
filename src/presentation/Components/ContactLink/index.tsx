@@ -11,14 +11,14 @@ interface PropsContactLink {
   icon: ReactElement;
   copy: () => void;
   textLink: string;
-  email: boolean;
+  useTextLink: boolean;
 }
 export function ContactLink({
   link,
   icon,
   copy,
   textLink,
-  email
+  useTextLink
 }: PropsContactLink) {
   const CopyText = async (text: string) => {
     await navigator.clipboard
@@ -42,16 +42,16 @@ export function ContactLink({
               target={"_blank"}
               rel="noreferrer"
             >
-              Abrir Link
+              Abrir link
             </a>
           </li>
           <li className="link__hover__list__item">
             {Icons.CopyText}
             <button
               className="link__item link__item--copy"
-              onClick={() => CopyText(email ? textLink : link)}
+              onClick={() => CopyText(useTextLink ? textLink : link)}
             >
-              Copiar Link
+              {useTextLink ? "Copiar" : "Copiar link"}
             </button>
           </li>
         </ul>
