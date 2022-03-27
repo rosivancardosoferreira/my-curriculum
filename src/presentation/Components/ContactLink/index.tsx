@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import { motion } from "framer-motion";
 
 // ASSETS
 import { Icons } from "assets/icons";
@@ -6,19 +7,24 @@ import { Icons } from "assets/icons";
 // STYLE
 import { ContainerContactLink } from "./style";
 
+// UTILS
+import { AnimationScale } from "utils/animations";
+
 interface PropsContactLink {
   link: string;
   icon: ReactElement;
   copy: () => void;
   textLink: string;
   useTextLink: boolean;
+  durationAnimation: number;
 }
 export function ContactLink({
   link,
   icon,
   copy,
   textLink,
-  useTextLink
+  useTextLink,
+  durationAnimation
 }: PropsContactLink) {
   const CopyText = async (text: string) => {
     await navigator.clipboard
@@ -31,7 +37,10 @@ export function ContactLink({
       });
   };
   return (
-    <ContainerContactLink>
+    <ContainerContactLink
+      as={motion.div}
+      {...AnimationScale({ transitionDuration: durationAnimation })}
+    >
       <div className="contact">
         <ul className="contact__list">
           <li className="contact__item">
