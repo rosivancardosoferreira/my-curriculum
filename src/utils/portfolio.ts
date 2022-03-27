@@ -57,6 +57,13 @@ const typescript = {
   class: ""
 };
 
+const node = {
+  name: "Node.js",
+  bgColor: "#90C53F",
+  color: "#010009",
+  class: ""
+};
+
 // IMAGENS
 
 export const WebPortfolio = [
@@ -158,7 +165,7 @@ export const MobilePortfolio = [
     created: "03/2021",
     splash_image: Images.ProtEpiAdmin.splash,
     home_image: Images.ProtEpiAdmin.home,
-    techs: [react, typescript, git, styled]
+    techs: [react, node, typescript, git, styled]
   },
   {
     name: "Protepi - Cliente",
@@ -167,7 +174,7 @@ export const MobilePortfolio = [
     created: "01/2021",
     splash_image: Images.ProtEpiClient.splash,
     home_image: Images.ProtEpiClient.home,
-    techs: [react, typescript, git, styled]
+    techs: [react, node, typescript, git, styled]
   },
   {
     name: "MyHair",
@@ -175,6 +182,6 @@ export const MobilePortfolio = [
     created: "10/2020",
     splash_image: Images.MyHair.splash,
     home_image: Images.MyHair.home,
-    techs: [react, javascript, git, styled]
+    techs: [react, node, javascript, git, styled]
   }
 ];

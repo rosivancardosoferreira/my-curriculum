@@ -45,10 +45,10 @@ export function AboutMe() {
                   {" "}
                   Rosivan Cardoso{" "}
                 </strong>
-                aqui, Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Earum repellendus enim iusto, nesciunt explicabo a similique
-                dolor dolorum inventore iste quaerat ipsam eos autem cupiditate
-                molestias doloremque sint magnam ullam.
+                aqui, sou desenvolvedor Web e Mobile com 2 anos de experiências
+                atuando principalmente em freelancers como fullstack. Conforme
+                foram surgindo oportunidades melhores passei a me dedicar ao
+                frontend e cá estou ✌️😉.
               </p>
               <ButtonLinkPrimary
                 link="#"
