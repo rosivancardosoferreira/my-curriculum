@@ -22,14 +22,14 @@ export function Portfolio() {
       <SubTitleSection title="Web" />
       <MapPortfolio>
         {WebPortfolio.map((elem, index) => (
-          <div className="portfolio__item" key={index}>
-            <div className="portfolio__item__area__image">
+          <div className="portfolio" key={index}>
+            <div className="portfolio__image">
               <img
                 src={elem.image.src}
                 alt={elem.image.alt}
-                className="portfolio__item__image"
+                className="portfolio__picture"
               />
-              <div className="portfolio__item__hidden">
+              <div className="portfolio__hidden">
                 {elem.link ? (
                   <ButtonLinkPrimary
                     link={elem.link}
@@ -38,13 +38,8 @@ export function Portfolio() {
                     target="_blank"
                   />
                 ) : (
-                  <p className="portfolio__item__internal">Uso interno.</p>
+                  <p className="portfolio__internal">Uso interno.</p>
                 )}
-                {/* <ButtonLinkPrimary
-                  link="#"
-                  typeButton="primary"
-                  title="Sobre"
-                /> */}
                 {elem.github && (
                   <ButtonLinkPrimary
                     link="#"
@@ -67,14 +62,14 @@ export function Portfolio() {
                   </Tech>
                 ))}
               </div>
-              <h4 className="portfolio__item__title">{elem.name}</h4>
-              <p className="portfolio__item__description">{elem.description}</p>
+              <h4 className="portfolio__title">{elem.name}</h4>
+              <p className="portfolio__description">{elem.description}</p>
             </div>
-            <div className="portfolio__item__created">
-              <div className="item__created__datas">
-                <div className="item__created__content">
+            <div className="portfolio__created">
+              <div className="portfolio__datas">
+                <div className="portfolio__calendar">
                   {Icons.Calendar}
-                  <p className="portfolio__item__created__date">
+                  <p className="portfolio__date">
                     Desenvolvido em: {elem.created}
                   </p>
                 </div>
@@ -93,17 +88,17 @@ export function Portfolio() {
       <SubTitleSection title="Mobile" />
       <MapPortfolio>
         {MobilePortfolio.map((elem, index) => (
-          <div className="portfolio__item" key={index}>
-            <div className="portfolio__item__area__image portfolio__item__area__image--mobile">
+          <div className="portfolio" key={index}>
+            <div className="portfolio__image portfolio__image--mobile">
               <img
                 src={elem.splash_image.src}
                 alt={elem.splash_image.alt}
-                className="portfolio__item__image--mobile"
+                className="portfolio__picture--mobile"
               />
               <img
                 src={elem.home_image.src}
                 alt={elem.home_image.alt}
-                className="portfolio__item__image--mobile"
+                className="portfolio__picture--mobile"
               />
             </div>
             <div className="portfolio__infos">
@@ -119,14 +114,14 @@ export function Portfolio() {
                   </Tech>
                 ))}
               </div>
-              <h4 className="portfolio__item__title">{elem.name}</h4>
-              <p className="portfolio__item__description">{elem.description}</p>
+              <h4 className="portfolio__title">{elem.name}</h4>
+              <p className="portfolio__description">{elem.description}</p>
             </div>
-            <div className="portfolio__item__created">
-              <div className="item__created__datas">
-                <div className="item__created__content">
+            <div className="portfolio__created">
+              <div className="portfolio__datas">
+                <div className="portfolio__calendar">
                   {Icons.Calendar}
-                  <p className="portfolio__item__created__date">
+                  <p className="portfolio__date">
                     Desenvolvido em: {elem.created}
                   </p>
                 </div>

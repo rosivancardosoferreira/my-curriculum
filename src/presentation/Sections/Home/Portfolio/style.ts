@@ -9,17 +9,17 @@ export const MapPortfolio = styled.section`
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 40px;
-  .portfolio__item {
+  .portfolio {
     flex-direction: column;
     display: flex;
     border: 1px solid ${props => props.theme.colors.GrayTertiary};
-    .portfolio__item__area__image {
+    .portfolio__image {
       position: relative;
-      .portfolio__item__image {
+      .portfolio__picture {
         width: 100%;
         height: 100%;
       }
-      .portfolio__item__hidden {
+      .portfolio__hidden {
         transform: scale(0);
         transition: all 0.4s;
         position: absolute;
@@ -32,25 +32,25 @@ export const MapPortfolio = styled.section`
         row-gap: 20px;
         justify-content: center;
         background: rgba(0, 0, 0, 0.8);
-        .portfolio__item__internal {
+        .portfolio__internal {
           color: ${props => props.theme.colors.WhiteSecondary};
           font-family: ${props => props.theme.fonts.Archivo};
           font-size: ${props => props.theme.fontSize.Normal2};
         }
       }
       :hover {
-        .portfolio__item__hidden {
+        .portfolio__hidden {
           transform: scale(1);
         }
       }
     }
-    .portfolio__item__area__image--mobile {
+    .portfolio__image--mobile {
       border-bottom: 1px solid ${props => props.theme.colors.GrayTertiary};
       padding: 28px 0;
       display: flex;
       justify-content: center;
       column-gap: 28px;
-      .portfolio__item__image--mobile {
+      .portfolio__picture--mobile {
         height: 318px;
         width: 156px;
       }
@@ -76,32 +76,32 @@ export const MapPortfolio = styled.section`
           ) !important;
         }
       }
-      .portfolio__item__title {
+      .portfolio__title {
         font-size: ${props => props.theme.fontSize.Normal3};
         font-family: ${props => props.theme.fonts.Archivo};
         color: ${props => props.theme.colors.primaryWhite};
         font-weight: 500;
       }
-      .portfolio__item__description {
+      .portfolio__description {
         font-size: ${props => props.theme.fontSize.Normal1};
         font-family: ${props => props.theme.fonts.Montserrat};
         color: ${props => props.theme.colors.WhiteTertiary};
       }
     }
-    .portfolio__item__created {
+    .portfolio__created {
       padding: 20px 20px 10px 20px;
       display: flex;
       height: 100%;
       flex-direction: column;
       justify-content: flex-end;
-      .item__created__datas {
+      .portfolio__datas {
         display: flex;
         justify-content: space-between;
-        .item__created__content {
+        .portfolio__calendar {
           display: flex;
           column-gap: 10px;
         }
-        .portfolio__item__created__date {
+        .portfolio__date {
           font-size: ${props => props.theme.fontSize.Small2};
           font-family: ${props => props.theme.fonts.Montserrat};
           color: ${props => props.theme.colors.WhiteTertiary};
@@ -126,12 +126,12 @@ export const MapPortfolio = styled.section`
     }
   }
   @media screen and (max-width: 830px) {
-    .portfolio__item {
+    .portfolio {
       width: 100%;
     }
   }
   @media screen and (min-width: 831px) {
-    .portfolio__item {
+    .portfolio {
       width: calc(50% - 20px);
     }
   }
