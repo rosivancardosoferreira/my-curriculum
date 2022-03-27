@@ -32,23 +32,23 @@ export function ContactLink({
   };
   return (
     <ContainerContactLink>
-      <div className="link__hover">
-        <ul className="link__hover__list">
-          <li className="link__hover__list__item">
+      <div className="contact">
+        <ul className="contact__list">
+          <li className="contact__item">
             {Icons.OpenLink}
             <a
               href={link}
-              className="link__item link__item--cursor"
+              className="contact__link contact__link--cursor"
               target={"_blank"}
               rel="noreferrer"
             >
               Abrir link
             </a>
           </li>
-          <li className="link__hover__list__item">
+          <li className="contact__item">
             {Icons.CopyText}
             <button
-              className="link__item link__item--copy"
+              className="contact__link contact__link--copy"
               onClick={() => CopyText(useTextLink ? textLink : link)}
             >
               {useTextLink ? "Copiar" : "Copiar link"}

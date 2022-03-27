@@ -14,7 +14,7 @@ export const ContainerContactLink = styled.div`
       transform: scale(1.3);
     }
   }
-  .link__hover {
+  .contact {
     max-width: 200px;
     position: absolute;
     left: -55px;
@@ -27,14 +27,14 @@ export const ContainerContactLink = styled.div`
     transition: all 0.5s;
     overflow: hidden;
     border: 1px solid transparent;
-    .link__hover__list {
+    .contact__list {
       padding: 6px 15px;
       background-color: ${props => props.theme.colors.WhiteSecondary};
       width: 160px;
       display: flex;
       flex-direction: column;
       row-gap: 6px;
-      .link__hover__list__item {
+      .contact__item {
         display: flex;
         align-items: center;
         column-gap: 10px;
@@ -42,7 +42,7 @@ export const ContainerContactLink = styled.div`
         svg {
           transform: scale(1.7);
         }
-        .link__item {
+        .contact__link {
           color: ${props => props.theme.colors.PrimaryLight};
           font-size: ${props => props.theme.fontSize.Normal2};
           font-family: ${props => props.theme.fonts.Montserrat};
@@ -50,10 +50,10 @@ export const ContainerContactLink = styled.div`
           border: none;
           background-color: transparent;
         }
-        .link__item--cursor {
+        .contact__link--cursor {
           cursor: pointer;
         }
-        .link__item--copy {
+        .contact__link--copy {
           cursor: copy;
         }
       }
@@ -72,7 +72,7 @@ export const ContainerContactLink = styled.div`
     .link__svg {
       background-color: ${props => props.theme.colors.PrimaryLight};
     }
-    .link__hover {
+    .contact {
       max-height: 170px;
       top: -100px;
       padding-bottom: 10px;
