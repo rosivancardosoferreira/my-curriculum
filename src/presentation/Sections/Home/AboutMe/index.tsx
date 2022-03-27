@@ -27,21 +27,21 @@ export function AboutMe() {
     <ContainerAboutMe>
       <SimpleAlert open={open} message="Item copiado" />
       <TitleSection title="SOBRE MIM" />
-      <article className="about__container">
+      <article className="about">
         <AboutMeInfos>
           <article className="about__infos">
-            <article className="about__profile__photo">
-              <span className="about__infos__line" />
+            <article className="about__profile">
+              <span className="about__line" />
               <img
                 src={Images.Profile.src}
                 alt={Images.Profile.alt}
-                className="about__infos__photo"
+                className="about__photo"
               />
             </article>
-            <article className="about__container__text">
-              <p className="about__container__text__p">
+            <article className="about__texts">
+              <p className="about__paragraph">
                 Opa,
-                <strong className="about__container__text__strong">
+                <strong className="about__paragraph--strong">
                   {" "}
                   Rosivan Cardoso{" "}
                 </strong>
@@ -55,7 +55,7 @@ export function AboutMe() {
                 typeButton="primary"
                 title="Baixar currículo"
               />
-              <div className="list__contacts">
+              <div className="about__list">
                 {ListContacts.map((elem, index) => {
                   return (
                     <ContactLink

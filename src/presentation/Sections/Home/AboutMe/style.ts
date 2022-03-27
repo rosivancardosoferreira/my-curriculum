@@ -3,9 +3,7 @@ import { Images } from "assets/images";
 import { Parallax, SectionMaxWidth } from "presentation/styles/shared";
 
 export const ContainerAboutMe = styled.section`
-  /* display: none; */
-
-  .about__container {
+  .about {
     background-image: url(${Images.About.src});
     ${Parallax};
     padding: 50px 0;
@@ -17,9 +15,9 @@ export const AboutMeInfos = styled.article`
   .about__infos {
     display: flex;
     gap: 32px;
-    .about__profile__photo {
+    .about__profile {
       position: relative;
-      .about__infos__line {
+      .about__line {
         position: absolute;
         top: 0;
         left: 0;
@@ -29,28 +27,28 @@ export const AboutMeInfos = styled.article`
         border-bottom: none;
         border-right: 0;
       }
-      .about__infos__photo {
+      .about__photo {
         width: 263px;
         height: 300px;
         margin: 14px 0 0 14px;
       }
     }
-    .about__container__text {
+    .about__texts {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      .about__container__text__p {
+      .about__paragraph {
         font-size: ${props => props.theme.fontSize.Normal1};
         font-family: ${props => props.theme.fonts.Montserrat};
         color: ${props => props.theme.colors.primaryWhite};
         font-weight: 500;
         line-height: 23px;
-        .about__container__text__strong {
+        .about__paragraph--strong {
           font-weight: 600;
           color: ${props => props.theme.colors.BlueLight};
         }
       }
-      .list__contacts {
+      .about__list {
         display: flex;
         align-self: flex-end;
         gap: 20px;
@@ -61,10 +59,10 @@ export const AboutMeInfos = styled.article`
   @media screen and (max-width: 760px) {
     .about__infos {
       flex-direction: column;
-      .about__profile__photo {
+      .about__profile {
         width: fit-content;
       }
-      .about__container__text {
+      .about__texts {
         row-gap: 30px;
 
         .list__contacts {
