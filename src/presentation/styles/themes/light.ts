@@ -9,7 +9,8 @@ const light = {
     BlueLight: "#14FFF1",
     BlueLigh02: "#45C1FF",
     GrayTertiary: "#433A4E",
-    GreenNeon: "#0FFF50"
+    GreenNeon: "#0FFF50",
+    GreenWhats: "#0DC143"
   },
   size: {
     maxWidthDesktop: "calc(1216px + 72px * 2 )",

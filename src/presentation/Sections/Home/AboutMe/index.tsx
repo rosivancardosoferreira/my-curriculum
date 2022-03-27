@@ -9,7 +9,7 @@ import { Images } from "assets/images";
 // COMPONENTS
 import {
   TitleSection,
-  ButtonLinkPrimary,
+  // ButtonLinkPrimary,
   ContactLink,
   SimpleAlert
 } from "presentation/Components";
@@ -46,15 +46,15 @@ export function AboutMe() {
                   Rosivan Cardoso{" "}
                 </strong>
                 aqui, sou desenvolvedor Web e Mobile com 2 anos de experiências
-                atuando principalmente em freelancers como fullstack. Conforme
-                foram surgindo oportunidades melhores passei a me dedicar ao
-                frontend e cá estou ✌️😉.
+                atuando principalmente em freelancers como fullstack utilizando
+                PHP e Node.js. Conforme foram surgindo oportunidades melhores
+                passei a me dedicar um pouco mais ao frontend e cá estou ✌️😉.
               </p>
-              <ButtonLinkPrimary
+              {/* <ButtonLinkPrimary
                 link="#"
                 typeButton="primary"
                 title="Baixar currículo"
-              />
+              /> */}
               <div className="about__list">
                 {ListContacts.map((elem, index) => {
                   return (

@@ -12,6 +12,7 @@ export const ContainerSimpleAlert = styled.div<PropsContainerSimpleAlert>`
   bottom: ${props => (props.open ? "20px" : "-50px")};
   z-index: 2;
   transition: all 0.3s;
+  border: 1px solid red;
   .simplealert__article {
     background-color: ${props => props.theme.colors.primaryWhite};
     padding: 10px 30px;

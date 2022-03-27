@@ -64,8 +64,7 @@ export const AboutMeInfos = styled.article`
       }
       .about__texts {
         row-gap: 30px;
-
-        .list__contacts {
+        .about__list {
           margin-right: 6vw;
         }
       }
@@ -86,7 +85,7 @@ export const AboutMeInfos = styled.article`
 
   @media screen and (min-width: 1300px) {
     .about__infos {
-      width: 75%;
+      width: 80%;
     }
   }
 `;

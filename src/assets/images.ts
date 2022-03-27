@@ -103,5 +103,9 @@ export const Images = {
       src: "static/images/splash_rent.webp",
       alt: "Rent Home"
     }
+  },
+  WhatsApp: {
+    src: "static/images/icons/WhatsApp.webp",
+    alt: "WhatsApp Fixed"
   }
 };

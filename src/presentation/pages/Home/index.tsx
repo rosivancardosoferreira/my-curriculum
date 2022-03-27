@@ -8,10 +8,12 @@ import {
   Numbers,
   Footer
 } from "presentation/Sections";
+import { WhatsApp } from "presentation/Components";
 
 export function Home() {
   return (
     <Fragment>
+      <WhatsApp />
       <Banner />
       <AboutMe />
       <Skills />
