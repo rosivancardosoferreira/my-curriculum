@@ -9,8 +9,8 @@ interface PropsTitleSection {
 export function SubTitleSection({ title }: PropsTitleSection) {
   return (
     <ContainerTitleSection>
-      <hr className="sub__title__line" />
-      <h2 className="section__sub__title">{title}</h2>
+      <hr className="subtitle__line" />
+      <h2 className="subtitle__title">{title}</h2>
     </ContainerTitleSection>
   );
 }

@@ -7,11 +7,11 @@ export const ContainerTitleSection = styled.div`
   align-items: center;
   margin-top: 60px;
   margin-bottom: 50px;
-  .sub__title__line {
+  .subtitle__line {
     background-color: ${props => props.theme.colors.primaryWhite};
     width: 60px;
   }
-  .section__sub__title {
+  .subtitle__title {
     color: ${props => props.theme.colors.primaryWhite};
     font-size: ${props => props.theme.fontSize.Normal4};
     font-family: ${props => props.theme.fonts.Archivo};
