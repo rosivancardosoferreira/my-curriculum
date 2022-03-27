@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContainerFooter = styled.footer`
   background-color: ${props => props.theme.colors.primaryBlack};
-  .footer__save {
+  .footer {
     ${SectionMaxWidth}
     display: flex;
     margin-top: 50px;
@@ -21,11 +21,11 @@ export const ContainerFooter = styled.footer`
       display: flex;
       flex-direction: column;
       row-gap: 20px;
-      .footer__contacts-item {
+      .footer__item {
         display: flex;
         align-items: center;
         column-gap: 10px;
-        .footer__contacts-icon {
+        .footer__icon {
           border-radius: 50%;
           width: 35px;
           height: 35px;
@@ -34,7 +34,7 @@ export const ContainerFooter = styled.footer`
           align-items: center;
           justify-content: center;
         }
-        .footer__contacts-link {
+        .footer__link {
           font-size: ${props => props.theme.fontSize.Normal1};
           font-family: ${props => props.theme.fonts.Archivo};
           color: ${props => props.theme.colors.primaryWhite};
@@ -57,7 +57,7 @@ export const ContainerFooter = styled.footer`
     }
   }
   @media screen and (max-width: 700px) {
-    .footer__save {
+    .footer {
       .footer__thanks,
       .footer__contacts {
         width: 100%;

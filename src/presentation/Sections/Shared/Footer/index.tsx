@@ -9,15 +9,15 @@ import { ListContacts } from "utils/links";
 export function Footer() {
   return (
     <ContainerFooter>
-      <article className="footer__save">
+      <article className="footer">
         <nav className="footer__contacts">
           {ListContacts.map((elem, index) => (
-            <div key={index} className="footer__contacts-item">
-              <div className="footer__contacts-icon">{elem.icon}</div>
+            <div key={index} className="footer__item">
+              <div className="footer__icon">{elem.icon}</div>
               <a
                 href={elem.contact.link}
                 target="_blank"
-                className="footer__contacts-link"
+                className="footer__link"
                 rel="noreferrer"
               >
                 {elem.contact.text}
