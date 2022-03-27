@@ -10,15 +10,15 @@ export const ContainerBanner = styled.section`
   justify-content: space-evenly;
   flex-direction: column;
   position: relative;
-  .banner__infos {
-    .banner__infos__name,
-    .banner__infos__dev {
+  .banner {
+    .banner__name,
+    .banner__dev {
       color: ${props => props.theme.colors.primaryWhite};
       text-align: center;
       font-family: ${props => props.theme.fonts.Archivo};
       transition: all 0.2s;
     }
-    .banner__infos__dev {
+    .banner__dev {
       margin-top: 2rem;
       font-size: ${props => props.theme.fontSize.Normal3};
     }
@@ -48,8 +48,8 @@ export const ContainerBanner = styled.section`
 
   @media screen and (max-width: 767px) {
     background-position: 60%;
-    .banner__infos {
-      .banner__infos__name {
+    .banner {
+      .banner__name {
         font-size: ${props => props.theme.fontSize.phone.ExtraLarge};
       }
     }
@@ -61,8 +61,8 @@ export const ContainerBanner = styled.section`
 
   @media (min-width: 768px) and (max-width: 1439px) {
     background-position: center;
-    .banner__infos {
-      .banner__infos__name {
+    .banner {
+      .banner__name {
         font-size: ${props => props.theme.fontSize.tablet.ExtraLarge};
       }
     }
@@ -76,11 +76,11 @@ export const ContainerBanner = styled.section`
 
   @media screen and (min-width: 1440px) {
     background-position: center;
-    .banner__infos {
-      .banner__infos__name {
+    .banner {
+      .banner__name {
         font-size: ${props => props.theme.fontSize.desktop.ExtraLarge};
       }
-      .banner__infos__dev {
+      .banner__dev {
         font-size: ${props => props.theme.fontSize.desktop.Normal3};
       }
     }
