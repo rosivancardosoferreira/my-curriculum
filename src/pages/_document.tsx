@@ -42,10 +42,6 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-          <meta
-            name="description"
-            content="Opa, Rosivan aqui, este é meu website de apresentação."
-          ></meta>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -61,6 +57,12 @@ export default class MyDocument extends Document {
             property="og:image"
             content="/static/images/photo_profile.webp"
           />
+          <meta
+            name="description"
+            property="og:description"
+            content="Opa, Rosivan aqui, este é meu website de apresentação."
+          />
+          <meta name="author" content="Rosivan Cardoso Ferreira" />
         </Head>
         <body>
           <Main />
