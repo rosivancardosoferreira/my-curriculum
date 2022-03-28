@@ -40,4 +40,9 @@ export default createGlobalStyle`
         row-gap: 70px;
     }
   }
+  .hidden__scroll {
+    @media screen and (max-width: 768px) {
+      overflow: hidden;
+    }
+  }
 `;

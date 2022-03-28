@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 
 import {
   Banner,
@@ -13,6 +14,9 @@ import { NavHeader, WhatsApp } from "presentation/Components";
 export function Home() {
   return (
     <Fragment>
+      <Head>
+        <title>Rosivan Cardoso | Portfólio</title>
+      </Head>
       <NavHeader />
       <WhatsApp />
       <Banner />

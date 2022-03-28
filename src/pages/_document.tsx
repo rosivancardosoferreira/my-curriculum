@@ -42,9 +42,10 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-          <title>Rosivan Cardoso | Portfólio</title>
-          <meta name="description" content="Breve descrição do website."></meta>
-          {/* <link rel="apple-touch-icon" href="../../public/static/1648430637.ico" /> */}
+          <meta
+            name="description"
+            content="Opa, Rosivan aqui, este é meu website de apresentação."
+          ></meta>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
