@@ -62,9 +62,12 @@ export default class MyDocument extends Document {
           <meta
             name="image"
             property="og:image"
-            content="/static/photo_profile.webp"
+            content="https://rosivan-cardoso.vercel.app/static/images/photo_profile.webp"
           />
-          <meta name="image" content="/static/photo_profile.webp" />
+          <meta
+            name="image"
+            content="https://rosivan-cardoso.vercel.app/static/images/photo_profile.webp"
+          />
           <meta
             name="description"
             property="og:description"
