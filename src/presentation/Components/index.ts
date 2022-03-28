@@ -5,3 +5,4 @@ export { ButtonPrimary } from "./Buttons";
 export { ButtonLinkPrimary } from "./Buttons";
 export { SimpleAlert } from "./SimpleAlert";
 export { WhatsApp } from "./WhatsApp";
+export { NavHeader } from "./NavHeader";

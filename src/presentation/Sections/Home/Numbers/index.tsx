@@ -9,7 +9,7 @@ import { AnimationScale, AnimationYXO } from "utils/animations";
 
 export function Numbers() {
   return (
-    <ContainerNumber>
+    <ContainerNumber id="experiencia">
       <article className="number__article">
         <div className="number__infos">
           <motion.h4

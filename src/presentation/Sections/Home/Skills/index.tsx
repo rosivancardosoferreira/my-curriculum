@@ -14,7 +14,7 @@ export function Skills() {
   let ih = 0.3;
   let is = 0.3;
   return (
-    <ContainerSkills>
+    <ContainerSkills id="com-o-que-trabalho">
       <TitleSection title="COM O QUE TRABALHO" />
       <SubTitleSection title="Habilidades" />
       <ContainerMapSkills>

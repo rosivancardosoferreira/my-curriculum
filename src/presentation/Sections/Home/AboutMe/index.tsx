@@ -27,7 +27,7 @@ export function AboutMe() {
     setTimeout(() => setOpen(false), 3000);
   }
   return (
-    <ContainerAboutMe>
+    <ContainerAboutMe id="sobre-mim">
       <SimpleAlert open={open} message="Item copiado" />
       <TitleSection title="SOBRE MIM" />
       <article className="about">

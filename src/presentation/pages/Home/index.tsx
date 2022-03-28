@@ -8,11 +8,12 @@ import {
   Numbers,
   Footer
 } from "presentation/Sections";
-import { WhatsApp } from "presentation/Components";
+import { NavHeader, WhatsApp } from "presentation/Components";
 
 export function Home() {
   return (
     <Fragment>
+      <NavHeader />
       <WhatsApp />
       <Banner />
       <AboutMe />
