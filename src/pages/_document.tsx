@@ -42,15 +42,13 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
 
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
             crossOrigin=""
           />
-
           <link
             href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
@@ -58,14 +56,15 @@ export default class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
-          />
+          /> */}
+
           <link rel="icon" href="/static/1648430637.ico" />
           <meta
             name="image"
             property="og:image"
-            content="/static/images/photo_profile.webp"
+            content="/static/photo_profile.webp"
           />
-          <meta name="image" content="/static/images/photo_profile.webp" />
+          <meta name="image" content="/static/photo_profile.webp" />
           <meta
             name="description"
             property="og:description"
