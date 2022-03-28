@@ -9,7 +9,7 @@ interface PropsAnimationsYX {
   transitionDelay?: number;
 }
 
-export function AnimationYX({
+export function AnimationYXO({
   initialOpacity,
   initialTranslateY,
   initialTranslateX,

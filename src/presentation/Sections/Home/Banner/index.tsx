@@ -9,7 +9,7 @@ import { Icons } from "assets/icons";
 
 // UTILS
 import { ListContacts } from "utils/links";
-import { AnimationYX } from "utils/animations";
+import { AnimationYXO } from "utils/animations";
 
 // COMPONENTS
 import { ContactLink, SimpleAlert } from "presentation/Components";
@@ -26,7 +26,7 @@ export function Banner() {
       <SimpleAlert open={open} message="Item copiado" />
       <article className="banner">
         <motion.h1
-          {...AnimationYX({
+          {...AnimationYXO({
             initialTranslateY: 130,
             transitionDuration: 0.5,
             transitionDelay: 0.1
@@ -36,7 +36,7 @@ export function Banner() {
           ROSIVAN
         </motion.h1>
         <motion.p
-          {...AnimationYX({
+          {...AnimationYXO({
             initialTranslateY: 110,
             transitionDuration: 0.5,
             transitionDelay: 0.3

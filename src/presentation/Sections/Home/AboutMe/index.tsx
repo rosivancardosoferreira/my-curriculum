@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 // STYLE
 import { ContainerAboutMe, AboutMeInfos } from "./style";
@@ -16,9 +17,11 @@ import {
 
 // UTILS
 import { ListContacts } from "utils/links";
+import { AnimationYXO } from "utils/animations";
 
 export function AboutMe() {
   const [open, setOpen] = useState(false);
+  let i = 0.4;
   function handleSimpleModal() {
     setOpen(true);
     setTimeout(() => setOpen(false), 3000);
@@ -31,15 +34,33 @@ export function AboutMe() {
         <AboutMeInfos>
           <article className="about__infos">
             <article className="about__profile">
-              <span className="about__line" />
-              <img
+              <motion.span
+                {...AnimationYXO({
+                  initialTranslateX: -50,
+                  transitionDuration: 0.4,
+                  transitionDelay: 0.7
+                })}
+                className="about__line"
+              />
+              <motion.img
+                {...AnimationYXO({
+                  initialTranslateX: -50,
+                  transitionDuration: 0.4,
+                  transitionDelay: 0.4
+                })}
                 src={Images.Profile.src}
                 alt={Images.Profile.alt}
                 className="about__photo"
               />
             </article>
             <article className="about__texts">
-              <p className="about__paragraph">
+              <motion.p
+                {...AnimationYXO({
+                  transitionDuration: 0.8,
+                  transitionDelay: 0.4
+                })}
+                className="about__paragraph"
+              >
                 Opa,
                 <strong className="about__paragraph--strong">
                   {" "}
@@ -49,7 +70,7 @@ export function AboutMe() {
                 atuando principalmente em freelancers como fullstack utilizando
                 PHP e Node.js. Conforme foram surgindo oportunidades melhores
                 passei a me dedicar um pouco mais ao frontend e cá estou ✌️😉.
-              </p>
+              </motion.p>
               {/* <ButtonLinkPrimary
                 link="#"
                 typeButton="primary"
@@ -57,8 +78,10 @@ export function AboutMe() {
               /> */}
               <div className="about__list">
                 {ListContacts.map((elem, index) => {
+                  i = i + 0.3;
                   return (
                     <ContactLink
+                      durationAnimation={i}
                       copy={handleSimpleModal}
                       key={index}
                       link={elem.contact.link}
