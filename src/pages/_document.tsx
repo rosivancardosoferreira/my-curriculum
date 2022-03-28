@@ -57,6 +57,10 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/static/1648430637.ico" />
+          <meta
+            property="og:image"
+            content="/static/images/photo_profile.webp"
+          />
         </Head>
         <body>
           <Main />
