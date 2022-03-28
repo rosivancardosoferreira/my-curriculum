@@ -53,6 +53,9 @@ export const MapPortfolio = styled.section`
       .portfolio__picture--mobile {
         height: 318px;
         width: 156px;
+        :first-child {
+          z-index: 1;
+        }
       }
     }
     .portfolio__infos {

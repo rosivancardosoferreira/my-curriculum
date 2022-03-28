@@ -96,11 +96,11 @@ export const Images = {
   },
   Rent: {
     splash: {
-      src: "static/images/home_rent.webp",
+      src: "static/images/splash_rent.webp",
       alt: "Rent Splash"
     },
     home: {
-      src: "static/images/splash_rent.webp",
+      src: "static/images/home_rent.webp",
       alt: "Rent Home"
     }
   },

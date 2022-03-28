@@ -47,7 +47,7 @@ export function Skills() {
                 src={elem.icon.src}
                 alt={elem.icon.alt}
                 viewport={{ once: true }}
-                initial={{ rotateY: 540 }}
+                initial={{ rotateY: 360 }}
                 whileInView={{ rotateY: 0 }}
                 transition={{ duration: 0.3, delay: is }}
                 className="skill__icon"

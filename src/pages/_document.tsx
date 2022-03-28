@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <title>Rosivan Cardoso | Portfólio</title>
           <meta name="description" content="Breve descrição do website."></meta>
-          {/* <link rel="apple-touch-icon" href="/static/images/LOGO.png" /> */}
+          {/* <link rel="apple-touch-icon" href="../../public/static/1648430637.ico" /> */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -55,7 +55,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" href="/static/favicon.ico" />
+          <link rel="icon" href="/static/1648430637.ico" />
         </Head>
         <body>
           <Main />

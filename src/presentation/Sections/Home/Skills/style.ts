@@ -16,10 +16,6 @@ export const ContainerMapSkills = styled.div`
     max-width: 100%;
     height: 225px;
     margin: 0 -1px -1px 0;
-    /* * {
-      transition: transform 1s;
-      transform-style: preserve-3d;
-    } */
     .skill__name {
       margin-top: 30px;
       font-family: ${props => props.theme.fonts.Archivo};

@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+  :root {
+    color-scheme: dark;
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
