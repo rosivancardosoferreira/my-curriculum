@@ -65,6 +65,7 @@ export default class MyDocument extends Document {
             property="og:image"
             content="/static/images/photo_profile.webp"
           />
+          <meta name="image" content="/static/images/photo_profile.webp" />
           <meta
             name="description"
             property="og:description"
