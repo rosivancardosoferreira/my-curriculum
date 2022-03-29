@@ -59,22 +59,6 @@ export default class MyDocument extends Document {
           /> */}
 
           <link rel="icon" href="/static/1648430637.ico" />
-          <meta
-            name="image"
-            property="og:image"
-            content="https://rosivan-cardoso.vercel.app/static/images/photo_profile.webp"
-          />
-          <meta
-            name="image"
-            content="https://rosivan-cardoso.vercel.app/static/images/photo_profile.webp"
-          />
-          <meta
-            name="description"
-            property="og:description"
-            content="Opa, Rosivan Cardoso aqui, este é meu website de apresentação.
-            Criei este website para mostrar um pouco do meu trabalho."
-          />
-          <meta name="author" content="Rosivan Cardoso Ferreira" />
         </Head>
         <body>
           <Main />
