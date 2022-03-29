@@ -1,4 +1,8 @@
 export const Images = {
+  CardImage: {
+    src: "/static/images/photo.png",
+    alt: "Card Image Meta tags"
+  },
   Banner: {
     src: "/static/images/banner_image.webp",
     alt: "Background Image"

@@ -8,8 +8,8 @@ export default function Index() {
   const metatags = {
     title: "Rosivan Cardoso | Portfólio",
     description:
-      "Opa, Rosivan Cardoso aqui, este é meu website de apresentação. Criei este website para mostrar um pouco do meu trabalho.",
-    image: Images.Banner.src,
+      "Opa, Rosivan Cardoso aqui, este é meu website de apresentação. Criei esta página para mostrar um pouco do meu trabalho.",
+    image: Images.CardImage.src,
     url: "https://rosivan-cardoso.vercel.app"
   };
   return (
@@ -19,12 +19,6 @@ export default function Index() {
         <title>{metatags.title}</title>
         <meta name="description" content={metatags.description} />
         <meta name="author" content="Rosivan Cardoso Ferreira" />
-
-        {/* LINKEDIN */}
-        <meta property="og:title" content={metatags.title} />
-        <meta property="og:image" content={metatags.image} />
-        <meta property="og:description" content={metatags.description} />
-        <meta property="og:url" content={metatags.url} />
 
         {/* GOOGLE */}
         <meta itemProp="name" content={metatags.title} />
