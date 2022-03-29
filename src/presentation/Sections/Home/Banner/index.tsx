@@ -22,7 +22,7 @@ export function Banner() {
     setTimeout(() => setOpen(false), 3000);
   }
   return (
-    <ContainerBanner>
+    <ContainerBanner id="inicio">
       <SimpleAlert open={open} message="Item copiado" />
       <article className="banner">
         <motion.h1

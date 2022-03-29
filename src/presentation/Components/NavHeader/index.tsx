@@ -39,6 +39,9 @@ export function NavHeader() {
     <ContainerNavHeader sandwich={open} activeBackground={navbarColor}>
       <HamburguerMenu open={open} setOpen={handleMenu} />
       <nav className="header">
+        <a href="#inicio" className="header__link" onClick={handleAnchoring}>
+          Início
+        </a>
         <a href="#sobre-mim" className="header__link" onClick={handleAnchoring}>
           Sobre mim
         </a>

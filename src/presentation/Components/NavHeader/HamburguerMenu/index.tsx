@@ -10,9 +10,9 @@ export function HamburguerMenu({ open, setOpen }: HamburguerMenuProps) {
     <ContainerHamburguerMenu>
       <div
         onClick={setOpen}
-        className={open ? "l-header__menu l-header__open" : "l-header__menu"}
+        className={open ? "header__menu header__open" : "header__menu"}
       >
-        <div className="l-header__menu_burger"></div>
+        <div className="header__menu_burger"></div>
       </div>
     </ContainerHamburguerMenu>
   );

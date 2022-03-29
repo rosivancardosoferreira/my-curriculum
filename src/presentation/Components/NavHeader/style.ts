@@ -20,11 +20,29 @@ export const ContainerNavHeader = styled.nav<ContainerNavHeaderProps>`
     column-gap: 30px;
     z-index: 1;
     ${SectionMaxWidth};
-    padding: 20px;
+    padding: 10px;
     .header__link {
       font-family: ${props => props.theme.fonts.Archivo};
       font-weight: 500;
       color: ${props => props.theme.colors.primaryWhite};
+      position: relative;
+      padding: 10px 2px;
+      :after {
+        content: "";
+        width: 0;
+        height: 1px;
+        border-radius: 50px;
+        display: block;
+        position: absolute;
+        bottom: 1px;
+        background-color: ${props => props.theme.colors.primaryWhite};
+        transition: all 0.3s;
+      }
+      :hover {
+        :after {
+          width: 100%;
+        }
+      }
     }
   }
 
