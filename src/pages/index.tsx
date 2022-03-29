@@ -19,6 +19,7 @@ export default function Index() {
         <title>{metatags.title}</title>
         <meta name="description" content={metatags.description} />
         <meta name="author" content="Rosivan Cardoso Ferreira" />
+        <time dateTime="2022-03-28">Março 2022</time>
 
         {/* GOOGLE */}
         <meta itemProp="name" content={metatags.title} />
