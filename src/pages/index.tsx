@@ -18,6 +18,7 @@ export default function Index() {
         {/* <!-- HTML Meta Tags --> */}
         <title>{metatags.title}</title>
         <meta name="description" content={metatags.description} />
+        <meta name="author" content="Rosivan Cardoso Ferreira" />
 
         {/* LINKEDIN */}
         <meta property="og:title" content={metatags.title} />
@@ -38,7 +39,7 @@ export default function Index() {
         <meta property="og:image" content={metatags.image} />
 
         {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content={metatags.image} />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metatags.title} />
         <meta name="twitter:description" content={metatags.description} />
         <meta name="twitter:image" content={metatags.image} />
