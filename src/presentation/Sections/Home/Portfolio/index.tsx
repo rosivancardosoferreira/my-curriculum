@@ -44,13 +44,13 @@ export function Portfolio() {
                   ) : (
                     <p className="portfolio__internal">Uso interno.</p>
                   )}
-                  {elem.github && (
+                  {/* {elem.github && (
                     <ButtonLinkPrimary
                       link="#"
                       typeButton="primary"
                       title="GitHub"
                     />
-                  )}
+                  )} */}
                 </div>
               </div>
               <div className="portfolio__infos">
