@@ -16,7 +16,6 @@ export const GridSection = css`
     padding-right: 32px;
     column-gap: 16px;
     margin: auto;
-    border: 1px solid red;
   }
 
   @media screen and (min-width: 768px) {
